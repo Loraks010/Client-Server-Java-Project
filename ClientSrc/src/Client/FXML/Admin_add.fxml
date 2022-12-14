@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1400.0" style="-fx-background-color: #FF0000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.AdminAddController">
+   <children>
+      <AnchorPane layoutY="108.0" prefHeight="627.0" prefWidth="1400.0" style="-fx-background-color: #FFF8DC;">
+         <children>
+            <Button fx:id="AddCPUButton" layoutX="1236.0" layoutY="65.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #FF0000;" text="Добавить" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <TextField fx:id="CPUNameField" layoutX="26.0" layoutY="80.0" promptText="Название" />
+            <Text layoutX="584.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавить CPU">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="506.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавить материнскую плату">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="615.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавить ОЗУ">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="591.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавить блок питания">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="614.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавить мышку">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="592.0" layoutY="489.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавить клавиатуру">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="589.0" layoutY="555.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавить монитор">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Text layoutX="577.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавить видеокарту">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <TextField fx:id="CPUtechnical_processField" layoutX="709.0" layoutY="80.0" promptText="Тех процесс" />
+            <TextField fx:id="CPUfrequencyField" layoutX="538.0" layoutY="80.0" promptText="Частота" />
+            <TextField fx:id="CPUPriceField" layoutX="360.0" layoutY="80.0" promptText="Цена" />
+            <TextField fx:id="CPUMakerField" layoutX="193.0" layoutY="80.0" promptText="Производитель" />
+            <TextField fx:id="CPUturbo_boost_frequencyField" layoutX="882.0" layoutY="80.0" promptText="Турбьо буст частота" />
+            <TextField fx:id="CPUnumber_of_coresField" layoutX="1053.0" layoutY="105.0" promptText="Количество ядер" />
+            <TextField fx:id="MotherBoardNameField" layoutX="25.0" layoutY="148.0" promptText="Название" />
+            <TextField fx:id="MotherBoardRGBField" layoutX="708.0" layoutY="148.0" promptText="RGB" />
+            <TextField fx:id="MotherBoardSocket_typeField" layoutX="537.0" layoutY="148.0" promptText="Сокет" />
+            <TextField fx:id="MotherBoardPriceField" layoutX="359.0" layoutY="148.0" promptText="Цена" />
+            <TextField fx:id="MotherBoardMakerField" layoutX="192.0" layoutY="148.0" promptText="Производитель" />
+            <TextField fx:id="RAMNameField" layoutX="25.0" layoutY="222.0" promptText="Название" />
+            <TextField fx:id="RAMquantity_in_the_setField" layoutX="708.0" layoutY="222.0" promptText="Количество в комплекте" />
+            <TextField fx:id="RAMVolumeField" layoutX="537.0" layoutY="222.0" promptText="Объем" />
+            <TextField fx:id="RAMPriceField" layoutX="359.0" layoutY="222.0" promptText="Цена" />
+            <TextField fx:id="RAMMakerField" layoutX="192.0" layoutY="222.0" promptText="Производитель" />
+            <TextField fx:id="RAMfrequencyField" layoutX="881.0" layoutY="222.0" promptText="Частота" />
+            <TextField fx:id="RAMtimingsField" layoutX="1051.0" layoutY="222.0" promptText="Тайминги" />
+            <TextField fx:id="GraphicsCardNameField" layoutX="25.0" layoutY="295.0" promptText="Название" />
+            <TextField fx:id="GraphicsCardnumber_of_coresField" layoutX="708.0" layoutY="295.0" promptText="Количество ядер" />
+            <TextField fx:id="GraphicsCardfrequencyField" layoutX="537.0" layoutY="295.0" promptText="Частота" />
+            <TextField fx:id="GraphicsCardPriceField" layoutX="359.0" layoutY="295.0" promptText="Цена" />
+            <TextField fx:id="GraphicsCardMakerField" layoutX="192.0" layoutY="295.0" promptText="Производитель" />
+            <TextField fx:id="GraphicsCardTDPField" layoutX="881.0" layoutY="295.0" promptText="TDP" />
+            <TextField fx:id="PowerBlockNameField" layoutX="24.0" layoutY="359.0" promptText="Название" />
+            <TextField fx:id="PowerBlockcertificateField" layoutX="707.0" layoutY="359.0" promptText="Сертефикат" />
+            <TextField fx:id="PowerBlockPowerField" layoutX="536.0" layoutY="359.0" promptText="Мощность" />
+            <TextField fx:id="PowerBlockPriceField" layoutX="358.0" layoutY="359.0" promptText="Цена" />
+            <TextField fx:id="PowerBlockMakerField" layoutX="191.0" layoutY="359.0" promptText="Производитель" />
+            <TextField fx:id="MouseNameField" layoutX="23.0" layoutY="427.0" promptText="Название" />
+            <TextField fx:id="MouseRGBField" layoutX="706.0" layoutY="427.0" promptText="RGB" />
+            <TextField fx:id="MouseDPIField" layoutX="535.0" layoutY="427.0" promptText="DPI" />
+            <TextField fx:id="MousePriceField" layoutX="357.0" layoutY="427.0" promptText="Цена" />
+            <TextField fx:id="MouseMakerField" layoutX="190.0" layoutY="427.0" promptText="Производитель" />
+            <TextField fx:id="MouseWirelessField" layoutX="879.0" layoutY="427.0" promptText="Беспроводная" />
+            <TextField fx:id="KeyboardNameField" layoutX="27.0" layoutY="497.0" promptText="Название" />
+            <TextField fx:id="KeyboardSwitchesField" layoutX="710.0" layoutY="497.0" promptText="Тип свитчей" />
+            <TextField fx:id="KeyboardTypeField" layoutX="539.0" layoutY="497.0" promptText="Тип" />
+            <TextField fx:id="KeyboardPriceField" layoutX="361.0" layoutY="497.0" promptText="Цена" />
+            <TextField fx:id="KeyboardMakerField" layoutX="194.0" layoutY="497.0" promptText="Производитель" />
+            <TextField fx:id="KeyboardRGBField" layoutX="883.0" layoutY="497.0" promptText="RGB" />
+            <TextField fx:id="ScreenNameField" layoutX="28.0" layoutY="569.0" promptText="Название" />
+            <TextField fx:id="ScreenDiametrField" layoutX="711.0" layoutY="569.0" promptText="Диаметр матрицы" />
+            <TextField fx:id="Screenfrequency_of_updateField" layoutX="540.0" layoutY="569.0" promptText="Частота обновления" />
+            <TextField fx:id="ScreenPriceField" layoutX="362.0" layoutY="569.0" promptText="Цена" />
+            <TextField fx:id="ScreenMakerField" layoutX="195.0" layoutY="569.0" promptText="Производитель" />
+            <TextField fx:id="Screenscreen_resolutionField" layoutX="884.0" layoutY="569.0" promptText="Разрешение экрана" />
+            <TextField fx:id="CPUTDPField" layoutX="1053.0" layoutY="49.0" promptText="TDP" />
+            <Button fx:id="AddMotherBoardButton" layoutX="1236.0" layoutY="133.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #FF0000;" text="Добавить" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="AddRAMButton" layoutX="1236.0" layoutY="207.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #FF0000;" text="Добавить" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="AddGraphicsCardButton" layoutX="1236.0" layoutY="280.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #FF0000;" text="Добавить" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="AddPowerBlockButton" layoutX="1236.0" layoutY="344.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #FF0000;" text="Добавить" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="AddMouseButton" layoutX="1236.0" layoutY="412.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #FF0000;" text="Добавить" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="AddKeyboardButton" layoutX="1236.0" layoutY="482.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #FF0000;" text="Добавить" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="AddScreenButton" layoutX="1236.0" layoutY="554.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #FF0000;" text="Добавить" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="BackButton" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #FF0000;" text="Назад" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="463.0" layoutY="14.0" prefHeight="67.0" prefWidth="475.0" text="Аминистрирование" textFill="WHITE">
+         <font>
+            <Font name="Eras Demi ITC" size="54.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

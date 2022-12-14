@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #FF0000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.UserProfileController">
+   <children>
+      <AnchorPane layoutY="107.0" prefHeight="350.0" prefWidth="800.0" style="-fx-background-color: #FFF8DC;">
+         <children>
+            <Button fx:id="ChangePasswordButton" layoutX="43.0" layoutY="147.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="236.0" style="-fx-background-color: #FF0000;" text="Сменить пароль" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <TextField fx:id="ChangePasswordField" layoutX="43.0" layoutY="76.0" prefHeight="47.0" prefWidth="236.0" promptText="Новый пароль">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </TextField>
+            <Text layoutX="43.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Смена пароля вашего аккаунта" wrappingWidth="264.71875">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="BackButton" layoutX="14.0" layoutY="241.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="127.0" style="-fx-background-color: #FF0000;" text="Назад" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <TableView fx:id="OrderTable" layoutX="328.0" layoutY="47.0" prefHeight="200.0" prefWidth="458.0">
+              <columns>
+                <TableColumn fx:id="OrderID" prefWidth="75.0" text="ID заказа" />
+                  <TableColumn fx:id="ProductID" prefWidth="94.0" text="ID продукта" />
+                <TableColumn fx:id="ProductName" prefWidth="82.0" text="Название" />
+                  <TableColumn fx:id="OrderMaker" prefWidth="132.0" text="Производитель" />
+                  <TableColumn fx:id="ProductPrice" prefWidth="74.0" text="Цена" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="282.0" layoutY="26.0" prefHeight="67.0" prefWidth="236.0" text="Профиль" textFill="WHITE">
+         <font>
+            <Font name="Eras Demi ITC" size="54.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

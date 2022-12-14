@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #FF0000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.RAMController">
+   <children>
+      <AnchorPane layoutY="107.0" prefHeight="350.0" prefWidth="800.0" style="-fx-background-color: #FFF8DC;">
+         <children>
+            <TableView fx:id="RamTable" layoutX="173.0" layoutY="22.0" prefHeight="280.0" prefWidth="613.0">
+               <columns>
+                  <TableColumn fx:id="RamName" prefWidth="159.0" text="Название" />
+                  <TableColumn fx:id="RamMaker" prefWidth="137.0" text="Производитель" />
+                  <TableColumn fx:id="RamVolume" prefWidth="47.0" text="Объем" />
+                  <TableColumn fx:id="RamFquerency" prefWidth="54.0" text="Частота" />
+                  <TableColumn fx:id="RamTimings" prefWidth="65.0" text="Тайминги" />
+                  <TableColumn fx:id="RamCountInSet" prefWidth="105.0" text="Кол-во в наборе" />
+                  <TableColumn fx:id="RamPrice" prefWidth="45.0" text="Цена" />
+               </columns>
+            </TableView>
+            <Button fx:id="BackButton" layoutX="20.0" layoutY="237.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="134.0" style="-fx-background-color: #FF0000;" text="Назад" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Button fx:id="AddButton" layoutX="12.0" layoutY="70.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="150.0" style="-fx-background-color: #FF0000;" text="Добавитьв корзину" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="185.0" layoutY="22.0" prefHeight="67.0" prefWidth="431.0" text="Ассортимент ОЗУ" textFill="WHITE">
+         <font>
+            <Font name="Eras Demi ITC" size="54.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

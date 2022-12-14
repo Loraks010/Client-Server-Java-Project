@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Client.OrderController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="810.0" style="-fx-background-color: #FF0000;">
+         <children>
+            <AnchorPane layoutY="107.0" prefHeight="350.0" prefWidth="800.0" style="-fx-background-color: #FFF8DC;">
+               <children>
+                  <TableView fx:id="OrderTable" layoutX="173.0" layoutY="22.0" prefHeight="284.0" prefWidth="613.0">
+                     <columns>
+                        <TableColumn fx:id="OrderID" prefWidth="158.0" text="ID заказа" />
+                        <TableColumn fx:id="OrderUserID" prefWidth="295.0" text="ID пользователя" />
+                        <TableColumn fx:id="OrderProductID" prefWidth="158.0" text="Id товара" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="BackButton" layoutX="14.0" layoutY="249.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="150.0" style="-fx-background-color: #FF0000;" text="Назад" textFill="WHITE">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="DeleteButton" layoutX="14.0" layoutY="29.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="150.0" style="-fx-background-color: #FF0000;" text="Удалить" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <Label layoutX="305.0" layoutY="22.0" prefHeight="67.0" prefWidth="190.0" text="Заказы" textFill="WHITE">
+               <font>
+                  <Font name="Eras Demi ITC" size="54.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
