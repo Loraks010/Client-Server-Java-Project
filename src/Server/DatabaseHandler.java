@@ -98,7 +98,7 @@ public class DatabaseHandler extends Configs{
 
             }
             return list;
-        } catch (SQLException | ClassNotFoundException e) {
+        } catch (SQLException | ClassNotFoundException e) { 
             throw new RuntimeException(e);
         }
 
@@ -474,6 +474,7 @@ public class DatabaseHandler extends Configs{
         else {
             ob.setIsLocked(0);
         }
+        //SQL injection weakness
         String update="UPDATE "+ Const.USERS_TABLE+" SET " + Const.USER_STATUS + " = " +ob.getIsLocked() + " WHERE "+ Const.USER_ID + " = "+ob.getId() ;
         try {
             PreparedStatement prSt=getDbConnection().prepareStatement(update);

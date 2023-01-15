@@ -215,15 +215,27 @@ public class AdminAddController {
             stage.show();
         });
         AddCPUButton.setOnAction(actionEvent->{
+
             if(!CPUNameField.getText().trim().equals("") &&!CPUPriceField.getText().trim().equals("")&&
                     !CPUMakerField.getText().trim().equals("") &&
                     !CPUfrequencyField.getText().trim().equals("") &&
                     !CPUturbo_boost_frequencyField.getText().trim().equals("")&&
                     !CPUnumber_of_coresField.getText().trim().equals("") &&
                     !CPUtechnical_processField.getText().trim().equals("")&&
-                    !CPUTDPField.getText().trim().equals("")) {
-
-
+                    !CPUTDPField.getText().trim().equals(""))
+            {
+                try
+                {
+                    Double.parseDouble(CPUPriceField.getText().trim());
+                    Double.parseDouble(CPUfrequencyField.getText().trim());
+                    Integer.parseInt(CPUnumber_of_coresField.getText().trim());
+                    Integer.parseInt(CPUtechnical_processField.getText().trim());
+                    Integer.parseInt(CPUTDPField.getText().trim());
+                }
+                catch (NumberFormatException e)
+                {
+                    return;
+                }
                 CPU ob = new CPU(0, CPUNameField.getText().trim(), Double.parseDouble(CPUPriceField.getText().trim()),
                         CPUMakerField.getText().trim(), Double.parseDouble(CPUfrequencyField.getText().trim()),
                         Double.parseDouble(CPUturbo_boost_frequencyField.getText().trim()),
@@ -251,6 +263,17 @@ public class AdminAddController {
                     && !GraphicsCardnumber_of_coresField.getText().trim().equals("")
                     && !GraphicsCardTDPField.getText().trim().equals("")
             ) {
+                try
+                {
+                    Double.parseDouble(GraphicsCardPriceField.getText().trim());
+                    Double.parseDouble(GraphicsCardfrequencyField.getText().trim());
+                    Integer.parseInt(GraphicsCardnumber_of_coresField.getText().trim());
+                    Integer.parseInt(GraphicsCardTDPField.getText().trim());
+                }
+                catch (NumberFormatException e)
+                {
+                    return;
+                }
                 Graphics_card ob = new Graphics_card(0, Double.parseDouble(GraphicsCardPriceField.getText().trim()), GraphicsCardNameField.getText().trim(),
                         GraphicsCardMakerField.getText().trim(), Double.parseDouble(GraphicsCardfrequencyField.getText().trim()),
                         Integer.parseInt(GraphicsCardnumber_of_coresField.getText().trim()), Integer.parseInt(GraphicsCardTDPField.getText().trim()));
@@ -276,6 +299,15 @@ public class AdminAddController {
                     && !ScreenDiametrField.getText().trim().equals("")
                     && !Screenscreen_resolutionField.getText().trim().equals("")
             ) {
+                try
+                {
+                    Double.parseDouble(ScreenPriceField.getText().trim());
+                    Double.parseDouble(Screenfrequency_of_updateField.getText().trim());
+                }
+                catch (NumberFormatException e)
+                {
+                    return;
+                }
                 Screen ob = new Screen(0, Double.parseDouble(ScreenPriceField.getText().trim()), ScreenNameField.getText().trim(),
                         ScreenMakerField.getText().trim(), Double.parseDouble(Screenfrequency_of_updateField.getText().trim()),
                         ScreenDiametrField.getText().trim(),Screenscreen_resolutionField.getText().trim() );
@@ -301,6 +333,15 @@ public class AdminAddController {
                     && !KeyboardSwitchesField.getText().trim().equals("")
                     && !KeyboardTypeField.getText().trim().equals("")
             ) {
+                try
+                {
+                    Double.parseDouble(KeyboardPriceField.getText().trim());
+                    Integer.parseInt(KeyboardRGBField.getText().trim());
+                }
+                catch (NumberFormatException e)
+                {
+                    return;
+                }
                 Keyboard ob = new Keyboard(0, Double.parseDouble(KeyboardPriceField.getText().trim()), KeyboardNameField.getText().trim(),
                         KeyboardMakerField.getText().trim(), KeyboardTypeField.getText().trim(),
                         KeyboardSwitchesField.getText().trim(),Integer.parseInt(KeyboardRGBField.getText().trim()));
@@ -327,6 +368,17 @@ public class AdminAddController {
                     && !RAMquantity_in_the_setField.getText().trim().equals("")
                     && !RAMVolumeField.getText().trim().equals("")
             ) {
+                try
+                {
+                    Double.parseDouble(RAMPriceField.getText().trim());
+                    Integer.parseInt(RAMVolumeField.getText().trim());
+                    Integer.parseInt(RAMquantity_in_the_setField.getText().trim());
+                    Double.parseDouble(RAMfrequencyField.getText().trim());
+                }
+                catch (NumberFormatException e)
+                {
+                    return;
+                }
                 Ram ob = new Ram(0, Double.parseDouble(RAMPriceField.getText().trim()), RAMNameField.getText().trim(),
                        RAMMakerField.getText().trim(), Integer.parseInt(RAMVolumeField.getText().trim()),
                         Integer.parseInt(RAMquantity_in_the_setField.getText().trim()),Double.parseDouble(RAMfrequencyField.getText().trim()),
@@ -353,6 +405,17 @@ public class AdminAddController {
                     && !MouseRGBField.getText().trim().equals("")
                     && !MouseWirelessField.getText().trim().equals("")
             ) {
+                try
+                {
+                    Double.parseDouble(MousePriceField.getText().trim());
+                    Integer.parseInt(MouseRGBField.getText().trim());
+                    Integer.parseInt(MouseDPIField.getText().trim());
+                    Integer.parseInt(MouseWirelessField.getText().trim());
+                }
+                catch (NumberFormatException e)
+                {
+                    return;
+                }
                 Mouse ob = new Mouse(0, Double.parseDouble(MousePriceField.getText().trim()), MouseNameField.getText().trim(),
                         MouseMakerField.getText().trim(), Integer.parseInt(MouseRGBField.getText().trim()),
                         Integer.parseInt(MouseDPIField.getText().trim()),Integer.parseInt(MouseWirelessField.getText().trim()));
@@ -377,6 +440,15 @@ public class AdminAddController {
                     && !PowerBlockPowerField.getText().trim().equals("")
                     && !PowerBlockcertificateField.getText().trim().equals("")
             ) {
+                try
+                {
+                    Double.parseDouble(PowerBlockPriceField.getText().trim());
+                    Integer.parseInt(PowerBlockPowerField.getText().trim());
+                }
+                catch (NumberFormatException e)
+                {
+                    return;
+                }
                 Power_block ob = new Power_block(0, Double.parseDouble(PowerBlockPriceField.getText().trim()), PowerBlockNameField.getText().trim(),
                         PowerBlockMakerField.getText().trim(), Integer.parseInt(PowerBlockPowerField.getText().trim()),
                         PowerBlockcertificateField.getText().trim());
@@ -401,6 +473,15 @@ public class AdminAddController {
                     && !MotherBoardRGBField.getText().trim().equals("")
                     && !MotherBoardSocket_typeField.getText().trim().equals("")
             ) {
+                try
+                {
+                    Double.parseDouble(MotherBoardPriceField.getText().trim());
+                    Integer.parseInt(MotherBoardRGBField.getText().trim());
+                }
+                catch (NumberFormatException e)
+                {
+                    return;
+                }
                 Mother_board ob = new Mother_board(0, Double.parseDouble(MotherBoardPriceField.getText().trim()), MotherBoardNameField.getText().trim(),
                         MotherBoardMakerField.getText().trim(),
                         MotherBoardSocket_typeField.getText().trim(), Integer.parseInt(MotherBoardRGBField.getText().trim()));

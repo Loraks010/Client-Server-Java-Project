@@ -5,7 +5,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import ProductTree.Product;
-import User.User;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -37,9 +36,6 @@ public class AdminMenuController {
     @FXML
     private Button ProfileButton;
 
-
-    private ObservableList<Product> productTable = FXCollections.observableArrayList();
-
     @FXML
     private TableView<Product> AdminTable;
 
@@ -57,12 +53,10 @@ public class AdminMenuController {
     @FXML
     private Button OrderButton;
 
-
-
     @FXML
     void initialize() {
 
-        productTable= FXCollections.observableArrayList(connect.getProducts());
+        ObservableList<Product> productTable = FXCollections.observableArrayList(connect.getProducts());
         AdminTableId.setCellValueFactory(new PropertyValueFactory<Product, Integer>("id"));
         AdminTableName.setCellValueFactory(new PropertyValueFactory<Product, String>("name"));
         AdminTablePrice.setCellValueFactory(new PropertyValueFactory<Product, Double>("price"));
